@@ -351,7 +351,7 @@ module ZendeskAPI
       has_many Event
     end
 
-    class Comment < DataResource
+    class Comment < Resource
       include Save
 
       has_many :uploads, :class => Attachment, :inline => true
